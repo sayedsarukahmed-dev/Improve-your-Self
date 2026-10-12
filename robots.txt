@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-username.github.io/fashionable/sitemap.xml
+Sitemap: https://sayedsarukahmed-dev.github.io/Improve-your-Self/sitemap.xml
