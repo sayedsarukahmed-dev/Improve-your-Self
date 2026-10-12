@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>Fashionable — Outfits That Actually Fit You</title>
+<meta name="description" content="Height and body-type based outfit recommendations, with direct links to buy on Flipkart and Meesho." />
+
+<!-- IMPORTANT: once your site is live, replace this placeholder URL everywhere in this file
+     (and in outfits.html, robots.txt, sitemap.xml) with your real GitHub Pages URL,
+     e.g. https://your-username.github.io/fashionable/ -->
+<link rel="canonical" href="https://your-username.github.io/fashionable/" />
+
+<!-- Open Graph (WhatsApp, Instagram, Facebook link previews) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Fashionable — Outfits That Actually Fit You" />
+<meta property="og:description" content="Height and body-type based outfit recommendations, with direct links to buy on Flipkart and Meesho." />
+<meta property="og:image" content="https://your-username.github.io/fashionable/images/og-image.jpg" />
+<meta property="og:url" content="https://your-username.github.io/fashionable/" />
+
+<!-- Twitter/X card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fashionable — Outfits That Actually Fit You" />
+<meta name="twitter:description" content="Height and body-type based outfit recommendations, with direct links to buy on Flipkart and Meesho." />
+<meta name="twitter:image" content="https://your-username.github.io/fashionable/images/og-image.jpg" />
+
+<meta name="theme-color" content="#e85d75" />
+<link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="images/favicon.png" sizes="512x512" />
+<link rel="apple-touch-icon" href="images/favicon.png" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div>
+      <div class="brand">Fashion<span>able</span></div>
+    </div>
+    <div class="header-tagline">Fits you. Not just anyone.</div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-title">Shop by category</div>
+      <div class="home-category-grid">
+        <a class="home-category-card" href="outfits.html">
+          <div class="icon">👕</div>
+          <div class="label">Outfits</div>
+        </a>
+        <div class="home-category-card disabled">
+          <div class="icon">🧴</div>
+          <div class="label">Skincare</div>
+          <div class="status">Coming soon</div>
+        </div>
+        <div class="home-category-card disabled">
+          <div class="icon">💇</div>
+          <div class="label">Haircare</div>
+          <div class="status">Coming soon</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <span>Trending in Outfits</span>
+        <a class="see-all" href="outfits.html">See all →</a>
+      </div>
+      <div id="trending-row" class="scroll-row">
+        <!-- product cards injected by js/home.js -->
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="pref-card">
+        <h2>Get picks made for your height</h2>
+        <div class="pref-subtext">Tell us your height, gender &amp; skin tone — all optional — and we'll show outfits that actually match your proportions.</div>
+        <a class="btn btn-primary" href="outfits.html" style="display:block;">Start with Outfits</a>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="active">
+      <span class="nav-icon">🏠</span>
+      <span>Home</span>
+    </a>
+    <a href="outfits.html">
+      <span class="nav-icon">👕</span>
+      <span>Outfits</span>
+    </a>
+    <a href="#" onclick="return false;" style="opacity:0.5;">
+      <span class="nav-icon">🧴</span>
+      <span>Skincare</span>
+    </a>
+    <a href="#" onclick="return false;" style="opacity:0.5;">
+      <span class="nav-icon">💇</span>
+      <span>Haircare</span>
+    </a>
+  </nav>
+
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
