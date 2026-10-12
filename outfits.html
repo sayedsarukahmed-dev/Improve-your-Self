@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>Outfits — Fashionable</title>
+<meta name="description" content="Outfits matched to your height, gender and style — with direct links to buy on Flipkart and Meesho." />
+
+<!-- See the note in index.html — update this placeholder URL once your site is live. -->
+<link rel="canonical" href="https://your-username.github.io/fashionable/outfits.html" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Outfits — Fashionable" />
+<meta property="og:description" content="Outfits matched to your height, gender and style — with direct links to buy on Flipkart and Meesho." />
+<meta property="og:image" content="https://your-username.github.io/fashionable/images/og-image.jpg" />
+<meta property="og:url" content="https://your-username.github.io/fashionable/outfits.html" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Outfits — Fashionable" />
+<meta name="twitter:description" content="Outfits matched to your height, gender and style — with direct links to buy on Flipkart and Meesho." />
+<meta name="twitter:image" content="https://your-username.github.io/fashionable/images/og-image.jpg" />
+
+<meta name="theme-color" content="#e85d75" />
+<link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="images/favicon.png" sizes="512x512" />
+<link rel="apple-touch-icon" href="images/favicon.png" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">Fashion<span>able</span></div>
+    <div class="header-tagline">Outfits</div>
+  </header>
+
+  <nav class="category-tabs" id="category-tabs">
+    <button class="category-tab active" data-category="all">All</button>
+    <button class="category-tab" data-category="casual">Casual</button>
+    <button class="category-tab" data-category="formal">Formal</button>
+    <button class="category-tab" data-category="ethnic">Ethnic</button>
+    <button class="category-tab" data-category="party">Party</button>
+  </nav>
+
+  <main>
+    <section class="section" id="pref-section">
+      <div class="pref-card">
+        <h2>Tell us about you</h2>
+        <div class="pref-subtext">Every field below is optional — skip anything you don't want to share. The more you fill, the better the match.</div>
+
+        <div class="pref-group">
+          <label class="group-label">I am shopping for <span class="optional-tag">(optional)</span></label>
+          <div class="chip-row" id="gender-chips">
+            <button class="chip-option" data-field="gender" data-value="male">Men</button>
+            <button class="chip-option" data-field="gender" data-value="female">Women</button>
+          </div>
+        </div>
+
+        <div class="pref-group">
+          <label class="group-label">My height <span class="optional-tag">(optional)</span></label>
+          <div class="chip-row" id="height-chips">
+            <button class="chip-option" data-field="height" data-value="petite">Under 5'4" (162cm)</button>
+            <button class="chip-option" data-field="height" data-value="average">5'4"–5'9" (162–175cm)</button>
+            <button class="chip-option" data-field="height" data-value="tall">Above 5'9" (175cm)</button>
+          </div>
+        </div>
+
+        <div class="pref-group">
+          <label class="group-label">My skin tone <span class="optional-tag">(optional)</span></label>
+          <div class="chip-row" id="skintone-chips">
+            <button class="chip-option" data-field="skinTone" data-value="fair">Fair</button>
+            <button class="chip-option" data-field="skinTone" data-value="wheatish">Wheatish</button>
+            <button class="chip-option" data-field="skinTone" data-value="medium">Medium</button>
+            <button class="chip-option" data-field="skinTone" data-value="deep">Deep</button>
+          </div>
+        </div>
+
+        <div class="pref-actions">
+          <button class="btn btn-secondary" id="skip-btn">Skip all</button>
+          <button class="btn btn-primary" id="apply-btn">Show my picks</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="results-section" style="display:none;">
+      <div class="results-summary">
+        <span id="results-count"></span>
+        <a href="#" class="edit-link" id="edit-prefs-link">Edit preferences</a>
+      </div>
+      <div class="product-grid" id="results-grid"></div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html">
+      <span class="nav-icon">🏠</span>
+      <span>Home</span>
+    </a>
+    <a href="outfits.html" class="active">
+      <span class="nav-icon">👕</span>
+      <span>Outfits</span>
+    </a>
+    <a href="#" onclick="return false;" style="opacity:0.5;">
+      <span class="nav-icon">🧴</span>
+      <span>Skincare</span>
+    </a>
+    <a href="#" onclick="return false;" style="opacity:0.5;">
+      <span class="nav-icon">💇</span>
+      <span>Haircare</span>
+    </a>
+  </nav>
+
+  <script src="js/common.js"></script>
+  <script src="js/outfits.js"></script>
+</body>
+</html>
