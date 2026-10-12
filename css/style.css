@@ -5,9 +5,9 @@
 =========================================== */
 
 :root {
-  --color-primary: #e85d75;
+  --color-primary: #e85d75;      /* warm coral - brand accent */
   --color-primary-dark: #c2415a;
-  --color-secondary: #2b2d42;
+  --color-secondary: #2b2d42;    /* deep navy-charcoal text */
   --color-bg: #faf8f6;
   --color-card-bg: #ffffff;
   --color-border: #ece7e4;
@@ -35,7 +35,7 @@ body {
   background: var(--color-bg);
   color: var(--color-secondary);
   line-height: 1.5;
-  padding-bottom: 72px;
+  padding-bottom: 72px; /* space for bottom nav */
 }
 
 a {
@@ -59,6 +59,7 @@ button {
   background: none;
 }
 
+/* ---------- Top header ---------- */
 .site-header {
   position: sticky;
   top: 0;
@@ -88,6 +89,7 @@ button {
   font-weight: 500;
 }
 
+/* ---------- Category tabs (Flipkart-style horizontal nav) ---------- */
 .category-tabs {
   display: flex;
   overflow-x: auto;
@@ -124,6 +126,7 @@ button {
   border-color: var(--color-primary);
 }
 
+/* ---------- Section wrapper ---------- */
 .section {
   padding: 16px;
 }
@@ -143,6 +146,7 @@ button {
   font-weight: 700;
 }
 
+/* ---------- Homepage category cards ---------- */
 .home-category-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -159,8 +163,19 @@ button {
 }
 
 .home-category-card .icon {
-  font-size: 1.8rem;
   margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-category-card .icon svg {
+  width: 30px;
+  height: 30px;
+  stroke: var(--color-primary);
+}
+
+.home-category-card.disabled .icon svg {
+  stroke: var(--color-muted);
 }
 
 .home-category-card .label {
@@ -178,6 +193,7 @@ button {
   opacity: 0.55;
 }
 
+/* ---------- Horizontal scroll preview row ---------- */
 .scroll-row {
   display: flex;
   gap: 10px;
@@ -191,6 +207,7 @@ button {
   display: none;
 }
 
+/* ---------- Product card ---------- */
 .product-card {
   flex: 0 0 150px;
   background: var(--color-card-bg);
@@ -236,6 +253,9 @@ button {
   overflow: hidden;
 }
 
+/* ---------- Combo / outfit-set card ---------- */
+/* A combo bundles several separately-bought pieces, so it needs more room
+   than a single-item card: wider in a horizontal row, full width in a grid. */
 .product-card.combo {
   flex-basis: 220px;
 }
@@ -367,6 +387,7 @@ button {
   font-weight: 700;
 }
 
+/* ---------- Product grid (results page) ---------- */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -378,6 +399,7 @@ button {
   width: 100%;
 }
 
+/* ---------- Preference form (Outfits module) ---------- */
 .pref-card {
   background: var(--color-card-bg);
   border-radius: var(--radius-md);
@@ -463,6 +485,7 @@ button {
   border: 1.5px solid var(--color-border);
 }
 
+/* ---------- Results header / summary ---------- */
 .results-summary {
   display: flex;
   align-items: center;
@@ -488,6 +511,7 @@ button {
   margin-bottom: 8px;
 }
 
+/* ---------- Bottom nav ---------- */
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -517,9 +541,17 @@ button {
 }
 
 .bottom-nav .nav-icon {
-  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
 }
 
+.bottom-nav .nav-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+}
+
+/* ---------- Loading skeleton ---------- */
 @keyframes skeleton-pulse {
   0% { opacity: 1; }
   50% { opacity: 0.5; }
@@ -568,6 +600,7 @@ button {
   margin-top: 8px;
 }
 
+/* ---------- Small screens safety ---------- */
 @media (max-width: 340px) {
   .home-category-grid {
     gap: 6px;
@@ -575,4 +608,4 @@ button {
   .product-card {
     flex-basis: 130px;
   }
-  }
+}
