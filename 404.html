@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>Page not found — Fashionable</title>
+<meta name="robots" content="noindex" />
+<meta name="theme-color" content="#e85d75" />
+<link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32" />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .notfound-wrap {
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 20px;
+  }
+  .notfound-wrap .emoji {
+    font-size: 3rem;
+    margin-bottom: 12px;
+  }
+  .notfound-wrap h1 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+  }
+  .notfound-wrap p {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+  .notfound-wrap .btn {
+    flex: none;
+  }
+</style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">Fashion<span>able</span></div>
+  </header>
+
+  <div class="notfound-wrap">
+    <div class="emoji">🧭</div>
+    <h1>This page wandered off</h1>
+    <p>The page you're looking for doesn't exist, or the link may be outdated.</p>
+    <a class="btn btn-primary" href="index.html" style="display:inline-block; padding: 12px 24px;">Back to Home</a>
+  </div>
+
+</body>
+</html>
